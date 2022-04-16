@@ -10,7 +10,9 @@ export interface TodoState {
 export const initialState = {
   todoList: [
     { id: 1, text: 'prueba1', completed: false },
-    { id: 2, text: 'prueba2', completed: false },
+    { id: 2, text: 'prueba2', completed: true },
+    { id: 3, text: 'prueba3', completed: false },
+    { id: 4, text: 'prueba5', completed: false },
   ],
 };
 
