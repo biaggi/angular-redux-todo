@@ -42,5 +42,13 @@ export const todoReducer = createReducer<TodoState>(
         return { ...todo, completed: completed };
       }),
     };
+  }),
+  on(todoActions.cleanCompletedTodo, (state) => {
+    return {
+      todoList: state.todoList.filter((todo) => {
+        return !todo.completed;
+      }),
+    };
   })
+
 );
