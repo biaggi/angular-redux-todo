@@ -6,3 +6,4 @@ export const deleteTodo = createAction('[Todo] deleteTodo', props<{id: number}>(
 export const setTodoComplete = createAction('[Todo] setTodoComplete', props<{id: number}>());
 export const updateTodo = createAction('[Todo] updateTodo', props<{id: number, text: string}>());
 export const toggleTodo = createAction('[Todo] toggleTodo', props<{id: number}>());
+export const toggleAllTodo = createAction('[Todo] toggleAllTodo', props<{completed: boolean}>());
